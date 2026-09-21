@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHNOVANZA 2026 | Department of Computer Science | Inter-College Tech Fest</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="TECHNOVANZA 2026 is the premier inter-college technology festival and hackathon hosted by the Department of Computer Science. Join 1,200+ innovators across debugging, UI/UX design, debate, gaming, and more.">
+  <meta name="keywords" content="Technovanza 2026, College Tech Fest, Department of Computer Science, Hackathon, Debugging, UI UX Design, Debate, Cyber Hunt, IPL Auction, Free Fire, BGMI, Inter-College Competitions">
+  <meta name="author" content="Department of Computer Science">
+  <meta name="theme-color" content="#04060e">
+
+  <!-- OpenGraph / Social Media -->
+  <meta property="og:title" content="TECHNOVANZA 2026 — Think Intelligently. Build Elegantly.">
+  <meta property="og:description" content="Experience the ultimate celebration of technology, design, gaming, and innovation at TECHNOVANZA 2026.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon Cyber Glyphs -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Live Canvas Ecosystem -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-glow-mesh" aria-hidden="true"></div>
+
+  <!-- Sticky Cyber Navigation Bar -->
+  <header>
+    <nav class="navbar" id="main-navbar" aria-label="Main Navigation">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#hero" class="nav-brand" aria-label="TECHNOVANZA 2026 Home">
+          <div class="nav-brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <span class="nav-brand-text">TECHNOVANZA</span>
+          <span class="nav-brand-badge">2026</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li role="none"><a href="#hero" class="nav-link active" role="menuitem">Home</a></li>
+          <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="#guidelines" class="nav-link" role="menuitem">Guidelines</a></li>
+          <li role="none"><a href="#programme-schedule" class="nav-link" role="menuitem">Programme Schedule</a></li>
+          <li role="none"><a href="#events" class="nav-link" role="menuitem">Events</a></li>
+          <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+        </ul>
+
+        <!-- Action Area (Audio FX + Register CTA) -->
+        <div class="nav-actions">
+          <!-- Cyber SFX Toggle -->
+          <button type="button" class="audio-toggle-btn" id="audio-toggle-btn" aria-label="Toggle Sound Effects" title="Toggle Futuristic Cyber Audio FX">
+            <svg id="audio-icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            </svg>
+            <svg id="audio-icon-muted" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+              <line x1="23" y1="9" x2="17" y2="15"/>
+              <line x1="17" y1="9" x2="23" y2="15"/>
+            </svg>
+          </button>
+
+          <!-- Register Now CTA Button -->
+          <a href="#qr-registration" class="btn btn-primary btn-nav-register scroll-to-qr">
+            REGISTER NOW
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         HERO / FRONT PAGE SECTION
+         ====================================================================== -->
+    <section class="hero-section" id="hero" aria-label="TECHNOVANZA 2026 Welcome">
+      <!-- HUD Reticles -->
+      <div class="hero-hud-frame" aria-hidden="true"></div>
+      <div class="hero-corner-bracket hero-corner-tl" aria-hidden="true"></div>
+      <div class="hero-corner-bracket hero-corner-tr" aria-hidden="true"></div>
+      <div class="hero-corner-bracket hero-corner-bl" aria-hidden="true"></div>
+      <div class="hero-corner-bracket hero-corner-br" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <!-- Host Department Badge -->
+        <div class="hero-dept-badge-wrap">
+          <div class="hero-dept-badge">
+            <span class="hero-dept-badge-dot"></span>
+            <span>Department of Computer Science and Applications</span>
+          </div>
+          <div class="hero-presents-badge">Presents</div>
+        </div>
+
+        <div class="hero-brand-lockup">
+          <div class="hero-event-level">A NATIONAL LEVEL IT-FEST</div>
+
+          <!-- THE MASTER VISUAL TITLE -->
+          <div class="hero-title-container">
+            <div class="hero-title-aura" aria-hidden="true"></div>
+            <div class="hero-light-beam" aria-hidden="true"></div>
+            <h1 class="hero-title" data-text="TECHNOVANZA">
+              <span class="hero-title-text">TECHN<span class="hero-title-o">O</span>VANZA</span>
+            </h1>
+          </div>
+
+          <!-- 2026 Year Element -->
+          <div class="hero-year-wrapper">
+            <div class="hero-year-line left" aria-hidden="true"></div>
+            <div class="hero-year">2026</div>
+            <div class="hero-year-line right" aria-hidden="true"></div>
+          </div>
+
+          <div class="hero-inspiration-line">IMAGINE. INNOVATE. INSPIRE</div>
+        </div>
+
+        <!-- Tagline -->
+        <h2 class="hero-tagline">Think Intelligently. Build Elegantly.</h2>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="#events" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+              <circle cx="12" cy="12" r="10"/>
+              <polygon points="10 8 16 12 10 16 10 8"/>
+            </svg>
+            EXPLORE EVENTS
+          </a>
+          <a href="#qr-registration" class="btn btn-primary scroll-to-qr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="8.5" cy="7.5" r="4"/>
+              <line x1="20" y1="8" x2="20" y2="14"/>
+              <line x1="23" y1="11" x2="17" y2="11"/>
+            </svg>
+            REGISTER NOW
+          </a>
+        </div>
+
+        <!-- Live Event Countdown Timer -->
+        <div class="hero-countdown-card" id="hero-countdown" aria-label="Event Countdown Timer">
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-days">00</span>
+            <span class="countdown-lbl">Days</span>
+          </div>
+          <div class="countdown-divider">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-hours">00</span>
+            <span class="countdown-lbl">Hours</span>
+          </div>
+          <div class="countdown-divider">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-minutes">00</span>
+            <span class="countdown-lbl">Minutes</span>
+          </div>
+          <div class="countdown-divider">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-seconds">00</span>
+            <span class="countdown-lbl">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ABOUT TECHNOVANZA SECTION
+         ====================================================================== -->
+    <section class="about-section" id="about" aria-label="About TECHNOVANZA">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Cyber Matrix Overview</div>
+          <h2>ABOUT <span class="gradient-text-cyan">TECHNOVANZA</span></h2>
+        </div>
+
+        <div class="about-grid about-panels" aria-label="About CAIAS, the department, Int-Elegance, and TECHNOVANZA">
+          <article class="glass-panel about-card about-panel about-panel-college">
+            <div class="about-panel-index">01 / INSTITUTION</div>
+            <h3>ABOUT THE <span>COLLEGE</span></h3>
+            <h4>CHRIST ACADEMY INSTITUTE FOR ADVANCED STUDIES</h4>
+            <p class="about-paragraph">
+              Christ Academy Institute for Advanced Studies (CAIAS), affiliated to Bangalore University, is a vibrant institution committed to academic excellence, innovation, and holistic student development. With modern infrastructure, advanced laboratories, digital learning facilities, and a strong focus on research and experiential learning, CAIAS empowers students to become future-ready professionals.
+            </p>
+            <p class="about-paragraph">Through dedicated faculty, mentoring, industry exposure, and diverse co-curricular activities, the institution nurtures creativity, leadership, and ethical values.</p>
+            <p class="about-panel-tagline">CAIAS — Empowering minds, inspiring innovation, shaping the future.</p>
+          </article>
+
+          <article class="glass-panel about-card about-panel about-panel-department">
+            <div class="about-panel-index">02 / DISCIPLINE</div>
+            <h3>ABOUT THE <span>DEPARTMENT</span></h3>
+            <h4>DEPARTMENT OF COMPUTER SCIENCE AND APPLICATIONS</h4>
+            <p class="about-paragraph">
+              The Department of Computer Science and Applications at CAIAS is dedicated to developing skilled IT professionals through a blend of academic excellence, practical learning, and industry exposure.
+            </p>
+            <p class="about-paragraph">With programmes including BCA, BCA in AI &amp; ML, BCA in Data Science, and MCA, the department focuses on emerging technologies such as Artificial Intelligence, Machine Learning, Data Science, and Cloud Computing.</p>
+            <p class="about-paragraph">Through workshops, internships, coding competitions, research projects, and industry collaborations, students are prepared to become innovative and responsible technology professionals.</p>
+          </article>
+
+          <article class="glass-panel about-card about-panel about-panel-club">
+            <div class="about-panel-index">03 / COMMUNITY</div>
+            <h3>ABOUT THE <span>INT-ELEGANCE CLUB</span></h3>
+            <h4>INT-ELEGANCE</h4>
+            <p class="about-panel-tagline">Think Intelligently. Build Elegantly.</p>
+            <p class="about-paragraph">
+              Int-Elegance, the IT Club of CAIAS, is a dynamic platform that brings together technology, creativity, and innovation. Through coding challenges, technical quizzes, workshops, paper presentations, and technical fests, the club encourages students to develop technical skills, critical thinking, teamwork, and leadership.
+            </p>
+            <p class="about-panel-tagline">Int-Elegance — Where ideas meet innovation and technology meets purpose.</p>
+          </article>
+
+          <article class="glass-panel about-card about-panel about-panel-fest">
+            <div class="about-panel-index">04 / EXPERIENCE</div>
+            <h3>ABOUT <span>TECHNOVANZA</span></h3>
+            <h4>WHERE IDEAS IGNITE. INNOVATION TAKES OVER.</h4>
+            <p class="about-paragraph">
+              The Int-Elegance Club, in association with the Department of Computer Science and Applications, proudly presents TECHNOVANZA 2026 — a One Day IT Fest celebrating technology, creativity, and innovation.
+            </p>
+            <p class="about-paragraph">From coding challenges and tech quizzes to Ideathons, TECHNOVANZA 2026 offers a vibrant platform for students to showcase their skills, challenge their limits, and transform ideas into possibilities.</p>
+            <p class="about-paragraph">More than a competition, TECHNOVANZA is a celebration of collaboration, problem-solving, and the spirit of innovation.</p>
+            <p class="about-panel-tagline">Think Beyond. Code Beyond. Create Beyond.<br>Your ideas. Your skills. Your moment.</p>
+          </article>
+        </div>
+
+        <!-- Fest Metric Highlights -->
+        <div class="stats-strip" id="stats-strip">
+          <!-- Populated dynamically from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         OUR VISION SECTION
+         ====================================================================== -->
+    <section class="vision-section" id="vision" aria-label="Our Vision">
+      <div class="container">
+        <div class="glass-panel vision-card">
+          <div class="vision-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              <circle cx="12" cy="12" r="4"/>
+            </svg>
+          </div>
+          <h2 class="vision-title">OUR <span class="gradient-text-cyan">VISION</span></h2>
+          <p class="vision-quote" style="margin: 0; font-size: 1.08rem; line-height: 1.8; color: var(--text-primary);">
+            To build an inclusive and forward-thinking student community that nurtures curiosity, creativity, and technical excellence in technologies, empowering members to become agile learners, collaborative problem-solvers, and responsible contributors to the evolving digital world.
+          </p>
+          <blockquote class="vision-tagline" style="margin-top: 1.2rem; font-size: 1.15rem; color: var(--cyan-primary);">
+            “Where Ideas Meet Innovation.”
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         GENERAL GUIDELINES OF THE EVENT
+         ====================================================================== -->
+    <section class="guidelines-section" id="guidelines" aria-label="General Guidelines of the Event">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Participation Rules</div>
+          <h2>GENERAL GUIDELINES <span class="gradient-text-cyan">OF THE EVENT</span></h2>
+        </div>
+
+        <div class="glass-panel about-card" style="position: relative; overflow: hidden;">
+          <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0, 255, 180, 0.08), transparent 35%, rgba(0, 198, 255, 0.08)); pointer-events: none;"></div>
+          <div class="guidelines-layout" style="display: grid; grid-template-columns: 1fr; gap: 1rem; position: relative; z-index: 1; max-width: 1100px; margin: 0 auto;">
+            <div class="guidelines-content" style="display: grid; gap: 0.85rem;">
+              <div>
+                <h3 style="margin-bottom: 0.75rem; color: var(--cyan-primary);">Registration &amp; Participation</h3>
+                <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-primary); line-height: 1.8;">
+                  <li>Registration is mandatory and will be accepted on a first-come, first-served basis.</li>
+                  <li>Participants may register online or offline.</li>
+                  <li>On-the-spot registration begins at 8:00 AM on the event day, subject to availability.</li>
+                  <li>Participants must report at least 15 minutes before the event begins.</li>
+                  <li>A valid college ID card is required for participation.</li>
+                  <li>For team events, all members must be registered.</li>
+                  <li>In case of overlapping events, participants must choose one—no adjustments will be made.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 style="margin-bottom: 0.75rem; color: var(--cyan-primary);">Code of Conduct</h3>
+                <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-primary); line-height: 1.8;">
+                  <li>Participants must maintain discipline and decorum throughout the event.</li>
+                  <li>Misconduct, disrespect, or use of offensive language will result in disqualification.</li>
+                  <li>Malpractice or cheating in any form is strictly prohibited.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 style="margin-bottom: 0.75rem; color: var(--cyan-primary);">Rules &amp; Instructions</h3>
+                <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-primary); line-height: 1.8;">
+                  <li>Event-specific instructions will be given by coordinators before the start of each event.</li>
+                  <li>The judges’ decisions are final and binding.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 style="margin-bottom: 0.75rem; color: var(--cyan-primary);">Certificates &amp; Contact</h3>
+                <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-primary); line-height: 1.8;">
+                  <li>All participants will receive E-certificates.</li>
+                  <li>Winners will be awarded certificates, trophies, or prizes as applicable.</li>
+                  <li>For any queries or registration issues, please contact the designated event coordinator or visit the help desk at the venue.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 style="margin-bottom: 0.75rem; color: var(--cyan-primary);">Queries &amp; Contact</h3>
+                <p style="margin: 0; color: var(--text-primary); line-height: 1.8;">
+                  For any questions regarding the event or registration, please contact the assigned event coordinators. Their details are provided on the last page of the brochure. A help desk will also be available at the venue for on-the-spot assistance.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PROGRAMME SCHEDULE SECTION
+         ====================================================================== -->
+    <section class="programme-section" id="programme-schedule" aria-label="Programme Schedule">
+      <div class="container">
+        <div class="section-header programme-header">
+          <div class="section-tag">Event Coordinates</div>
+          <h2>PROGRAMME <span class="gradient-text-cyan">SCHEDULE</span></h2>
+        </div>
+
+        <div class="programme-date-banner glass-panel">
+          <span class="programme-date-label">DATE</span>
+          <strong>28th October 2026</strong>
+        </div>
+
+        <div class="offline-timeline">
+            <article class="schedule-timeline-item schedule-timeline-item-wide">
+              <div class="schedule-time-marker"><span>08:00</span><small>A.M.</small></div>
+              <div class="schedule-timeline-card glass-panel">
+                <h4>On Spot Registration</h4>
+                <p>8:00 a.m. – 8:45 a.m.</p>
+              </div>
+            </article>
+            <article class="schedule-timeline-item">
+              <div class="schedule-time-marker"><span>09:00</span><small>A.M.</small></div>
+              <div class="schedule-timeline-card glass-panel">
+                <h4>Inauguration Ceremony</h4>
+                <p>9:00 a.m. – 10:00 a.m.</p>
+              </div>
+            </article>
+            <article class="schedule-timeline-item schedule-timeline-item-featured">
+              <div class="schedule-time-marker"><span>10:00</span><small>A.M.</small></div>
+              <div class="schedule-timeline-card glass-panel">
+                <div class="schedule-card-label">Events Up</div>
+                <h4>BGMI, Cyber Hunt, IPL Auction, Free Fire, Pitch a Product, Hackathon, Debate</h4>
+                <p>10:00 a.m. – 11:30 a.m.</p>
+              </div>
+            </article>
+            <article class="schedule-timeline-item schedule-timeline-item-featured">
+              <div class="schedule-time-marker"><span>12:00</span><small>P.M.</small></div>
+              <div class="schedule-timeline-card glass-panel">
+                <div class="schedule-card-label">Events Up</div>
+                <h4>UI/UX, Best Manager, Debugging, IT Quiz</h4>
+                <p>12:00 p.m. – 2:00 p.m.</p>
+              </div>
+            </article>
+            <article class="schedule-timeline-item schedule-timeline-item-break schedule-timeline-item-lunch">
+              <div class="schedule-time-marker"><span>2:00</span><small>P.M.</small></div>
+              <div class="schedule-timeline-card glass-panel">
+                <h4>Lunch Break</h4>
+                <p>2:00 p.m. – 2:30 p.m.</p>
+              </div>
+            </article>
+            <article class="schedule-timeline-item schedule-timeline-item-featured">
+              <div class="schedule-time-marker"><span>2:30</span><small>P.M.</small></div>
+              <div class="schedule-timeline-card glass-panel">
+                <div class="schedule-card-label">Events Up</div>
+                <h4>Prompt Wars, Poster Making, Debate</h4>
+                <p>2:30 p.m. – 4:00 p.m.</p>
+              </div>
+            </article>
+            <article class="schedule-timeline-item schedule-timeline-item-final">
+              <div class="schedule-time-marker"><span>4:00</span><small>P.M.</small></div>
+              <div class="schedule-timeline-card glass-panel">
+                <h4>Prize Distribution &amp; Valedictory Ceremony</h4>
+                <p>4:00 p.m. – 4:30 p.m.</p>
+              </div>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         MAJOR EVENTS SECTION (12 CORE INTERACTIVE CARDS)
+         ====================================================================== -->
+    <section class="events-section" id="events" aria-label="Flagship Events">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Battlegrounds</div>
+          <h2>FLAGSHIP <span class="gradient-text-cyan">EVENTS</span></h2>
+          <p class="section-desc">Click any event card to explore round breakdowns, rules, formats, and register.</p>
+        </div>
+
+        <div class="events-grid" id="events-grid">
+          <!-- Dynamic rendering from data.js:
+               01. DEBUGGING
+               02. UI/UX DESIGNING
+               03. DEBATE
+               04. POSTER MAKING
+               05. BEST MANAGER
+               06. IT QUIZ
+               07. CYBER HUNT
+               08. IPL AUCTION
+               09. FREE FIRE
+               10. BGMI -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PARTICIPATION CTA (FULL-WIDTH IMPACT SECTION)
+         ====================================================================== -->
+    <section class="participation-cta-section" aria-label="Join Technovanza 2026">
+      <div class="container">
+        <div class="participation-banner">
+          <div class="cta-energy-ring" aria-hidden="true"></div>
+          
+          <h2 class="cta-heading">PARTICIPATE. COMPETE. CONQUER.</h2>
+          <p class="cta-text">
+            Whether you're a coder, designer, gamer, debater, or content creator, TECHNOVANZA has something for you.
+          </p>
+          <div class="cta-highlight">
+            Your ideas. Your skills. Your moment.
+          </div>
+
+          <a href="#qr-registration" class="btn btn-primary btn-large scroll-to-qr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+            REGISTER NOW
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         EVENT INFORMATION SECTION
+         ====================================================================== -->
+    <section class="info-section" id="event-info" aria-label="Event Logistics and Details">
+      <div class="container">
+        <div class="section-header">
+          <h2>TECHNOVANZA <span class="gradient-text-cyan">2026</span></h2>
+        </div>
+
+        <div class="info-grid">
+          <!-- Venue -->
+          <div class="glass-panel info-card">
+            <div class="info-icon" aria-hidden="true">📍</div>
+            <div class="info-label">Venue Coordinates</div>
+            <div class="info-val" id="info-venue">CAIAS-CS Labs</div>
+            <div class="info-sub" id="info-auditorium">CAIAS &amp; CS Lab</div>
+          </div>
+
+          <!-- Date -->
+          <div class="glass-panel info-card">
+            <div class="info-icon" aria-hidden="true">📅</div>
+            <div class="info-label">Calendar Dates</div>
+            <div class="info-val" id="info-dates">October 27 &amp; 28, 2026</div>
+            <div class="info-sub" id="info-days">Tuesday, Wednesday</div>
+          </div>
+
+          <!-- Time -->
+          <div class="glass-panel info-card">
+            <div class="info-icon" aria-hidden="true">⏰</div>
+            <div class="info-label">Operating Hours</div>
+            <div class="info-val" id="info-time">09:00 AM – 04:00 PM IST</div>
+            <div class="info-sub">Indian Standard Time (IST)</div>
+          </div>
+
+          <!-- Eligibility -->
+          <div class="glass-panel info-card">
+            <div class="info-icon" aria-hidden="true">👥</div>
+            <div class="info-label">Delegate Eligibility</div>
+            <div class="info-val">All College Students</div>
+            <div class="info-sub" id="info-eligibility">UG & PG • All Branches</div>
+          </div>
+        </div>
+
+        <!-- Registration Deadline Banner -->
+        <div class="info-deadline-banner glass-panel">
+          <div class="deadline-text-group">
+            <h4>REGISTRATION STATUS: <span class="gradient-text-cyan">ACTIVE & OPEN</span></h4>
+            <div class="deadline-highlight" id="info-deadline">Online Events Deadline: <strong>October 26, 2026</strong><br>Offline Events: <strong>On-spot registration available on October 28, 2026</strong></div>
+          </div>
+          <a href="#qr-registration" class="btn btn-primary scroll-to-qr">
+            SECURE YOUR PASS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         QR CODE REGISTRATION SECTION
+         ====================================================================== -->
+    <section class="qr-section" id="qr-registration" aria-label="Scan to Register">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Instant Access</div>
+          <h2>SCAN TO <span class="gradient-text-cyan">REGISTER</span></h2>
+          <p class="section-desc">Point your smartphone camera to access instant mobile registration, or click below.</p>
+        </div>
+
+        <div class="qr-container-card">
+          <div class="glass-panel scoreboard-panel">
+            <div class="event-scoreboard" aria-live="polite">
+            <div class="scoreboard-kicker">EVENT SCOREBOARD</div>
+            <div class="scoreboard-status" id="scoreboard-status">RESULTS PENDING</div>
+            <div class="scoreboard-progress" id="scoreboard-progress" style="--scoreboard-progress: 0%;" aria-label="Results preparation progress">
+              <div class="scoreboard-progress-orbit" aria-hidden="true"></div>
+              <div class="scoreboard-progress-core">
+                <strong id="scoreboard-percent">0%</strong>
+                <span id="scoreboard-progress-label">RESULTS<br>PENDING</span>
+              </div>
+            </div>
+            <div class="scoreboard-message" id="scoreboard-message">FINAL RESULTS ARE BEING PREPARED</div>
+            <div class="scoreboard-unlock-label">UNLOCKS ON</div>
+            <div class="scoreboard-unlock-date">28 OCTOBER 2026</div>
+            <div class="scoreboard-countdown-label" id="scoreboard-countdown-label">RESULTS AVAILABLE IN</div>
+            <div class="scoreboard-countdown" id="scoreboard-countdown" aria-live="polite">
+              <span><strong id="scoreboard-days">00</strong><small>DAYS</small></span>
+              <span><strong id="scoreboard-hours">00</strong><small>HOURS</small></span>
+              <span><strong id="scoreboard-minutes">00</strong><small>MINUTES</small></span>
+              <span><strong id="scoreboard-seconds">00</strong><small>SECONDS</small></span>
+            </div>
+            <button type="button" class="btn btn-primary scoreboard-results-btn" id="view-results-btn">VIEW RESULTS</button>
+            </div>
+          </div>
+
+          <div class="qr-registration-divider" aria-hidden="true"></div>
+
+          <div class="glass-panel qr-registration-panel">
+            <div class="qr-registration-content">
+              <div class="qr-panel-heading">SCAN TO REGISTER</div>
+              <div class="qr-registration-actions">
+                <!-- High-Tech Framed QR Code -->
+                <div class="qr-scanner-box">
+                  <div class="qr-laser-line" aria-hidden="true"></div>
+                  <img
+                    class="qr-code-image"
+                    src="registration-qr.png.jpeg"
+                    alt="QR code for TECHNOVANZA event registration"
+                  >
+                </div>
+
+                <a href="#qr-registration" class="btn btn-primary btn-large scroll-to-qr">
+                  REGISTER NOW
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT SECTION
+         ====================================================================== -->
+    <section class="contact-section" id="contact" aria-label="Contact Technovanza Coordinators">
+      <div class="container">
+        <div class="section-header">
+          <h2>CONTACT <span class="gradient-text-cyan">US</span></h2>
+        </div>
+
+        <div class="contact-grid contact-grid-single">
+          <!-- Department & Coordinator Contacts -->
+          <div class="glass-panel contact-info-panel">
+            <div>
+              <h3 class="contact-dept-title">Department of Computer Science and Applications</h3>
+              <div class="contact-college-name" id="contact-university">Christ Academy Institute for Advanced Studies</div>
+
+              <!-- Student Coordinators -->
+              <div class="coordinator-group">
+                <div class="coord-role-heading">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                  </svg>
+                  Student Coordinators
+                </div>
+                <div id="student-coords-list">
+                  <!-- Injected from data.js -->
+                </div>
+              </div>
+
+              <!-- Faculty Coordinators -->
+              <div class="coordinator-group">
+                <div class="coord-role-heading">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                  </svg>
+                  Faculty Coordinators
+                </div>
+                <div id="faculty-coords-list">
+                  <!-- Injected from data.js -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Connect Badges -->
+            <div class="contact-socials" style="margin-top: 1.5rem; display: flex; gap: 0.85rem;">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="audio-toggle-btn" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </a>
+              <a href="mailto:ashwini.gaonkar@caias.in" class="audio-toggle-btn" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div>
+          <h2 class="footer-brand-title">TECHNOVANZA <span class="gradient-text-cyan">2026</span></h2>
+          <p class="footer-motto">Think Intelligently. Build Elegantly.</p>
+          <p class="footer-host">
+            Hosted by the <strong>Department of Computer Science and Applications</strong>
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-nav-col">
+          <h4>EXPLORE</h4>
+          <ul class="footer-nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Fest</a></li>
+            <li><a href="#guidelines">Guidelines</a></li>
+            <li><a href="#events">Competitions</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Actions -->
+        <div class="footer-nav-col">
+          <h4>CONNECT</h4>
+          <ul class="footer-nav-links">
+            <li><a href="#contact">Contact Coordinators</a></li>
+            <li><a href="#qr-registration" class="scroll-to-qr">Scan to Register</a></li>
+            <li><a href="#hero" id="back-to-top-btn">Back to Top ↑</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 TECHNOVANZA. Department of Computer Science. All Rights Reserved.
+        </div>
+        <div class="footer-sys-status">
+          <span class="status-dot"></span>
+          <span>SYSTEM ONLINE • 60 FPS CANVAS • LATENCY: 14MS</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       MODAL 1: EVENT DETAILS MODAL
+       ====================================================================== -->
+  <div class="modal-backdrop" id="event-detail-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog glass-panel" id="event-modal-content">
+      <button type="button" class="modal-close-btn" id="close-event-modal" aria-label="Close modal">✕</button>
+      
+      <div class="modal-event-num" id="modal-event-num">EVENT 01</div>
+      <h3 class="modal-event-title" id="modal-event-title">DEBUGGING</h3>
+      <p id="modal-event-tagline" style="color: var(--cyan-primary); font-family: var(--font-sub); font-size: 1rem; margin-bottom: 1rem;"></p>
+
+      <div class="modal-meta-row">
+        <div class="modal-meta-item">
+          <strong>Team Size</strong>
+          <span id="modal-event-team">1 - 2 Members</span>
+        </div>
+        <div class="modal-meta-item">
+          <strong>Duration</strong>
+          <span id="modal-event-duration">4-Round Format</span>
+        </div>
+        <div class="modal-meta-item">
+          <strong>Prize Pool</strong>
+          <span id="modal-event-prize" style="color: var(--green-primary);">Certificates & Prizes</span>
+        </div>
+      </div>
+
+      <p id="modal-event-desc" style="color: var(--text-main); font-size: 0.98rem; line-height: 1.7;"></p>
+
+      <h4 class="modal-section-title">CHALLENGE ROUNDS</h4>
+      <ul class="modal-round-list" id="modal-event-rounds">
+        <!-- Injected dynamically -->
+      </ul>
+
+      <h4 class="modal-section-title">REGULATIONS & CRITERIA</h4>
+      <ul class="modal-round-list" id="modal-event-rules">
+        <!-- Injected dynamically -->
+      </ul>
+
+      <h4 class="modal-section-title">EVENT HEADS</h4>
+      <ul class="modal-round-list" id="modal-event-heads">
+        <!-- Injected dynamically -->
+      </ul>
+
+      <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeS6JdpZlDT_JD4rwQ2I7zfCUF5K37h0Zn9PPKbi9gNedCVYQ/viewform?pli=1" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1; text-align: center;" id="modal-register-this-event-btn">
+          REGISTER FOR THIS EVENT
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop results-modal-backdrop" id="results-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="results-modal-title">
+    <div class="modal-dialog results-modal-dialog glass-panel">
+      <button type="button" class="modal-close-btn" id="close-results-modal" aria-label="Close results panel">✕</button>
+      <div class="modal-event-num">EVENT RESULTS</div>
+      <h3 class="modal-event-title" id="results-modal-title">RESULTS NOT AVAILABLE YET</h3>
+      <div id="pending-results-view">
+        <div class="results-modal-progress scoreboard-progress" id="modal-scoreboard-progress" style="--scoreboard-progress: 0%;">
+          <div class="scoreboard-progress-orbit" aria-hidden="true"></div>
+          <div class="scoreboard-progress-core">
+            <strong id="modal-scoreboard-percent">0%</strong>
+            <span>RESULTS<br>PENDING</span>
+          </div>
+        </div>
+        <div class="scoreboard-message">RESULTS ARE BEING PREPARED</div>
+        <div class="scoreboard-unlock-label">UNLOCKS ON</div>
+        <div class="scoreboard-unlock-date">28 OCTOBER 2026</div>
+        <div class="scoreboard-countdown results-modal-countdown" id="modal-scoreboard-countdown"></div>
+        <p class="results-modal-message">FINAL EVENT RESULTS WILL BE AVAILABLE AFTER THE EVENT.</p>
+      </div>
+      <div id="final-results-view" hidden>
+        <div class="final-results-heading">FINAL SCOREBOARD</div>
+        <div class="results-data-note">PLACEHOLDER DATA - REPLACE WITH OFFICIAL RESULTS</div>
+        <div class="leaderboard" id="leaderboard" aria-live="polite"></div>
+      </div>
+      <button type="button" class="btn btn-primary results-close-action" id="close-results-action">CLOSE</button>
+    </div>
+  </div>
+
+
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="canvas.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
